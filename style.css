@@ -73,8 +73,7 @@
   flex-direction: column;
   width: 304px;
   height: 718px;
-  background: #FFFFFF;  
-  background-image:url(./assets/header-shapes\ mobile.svg);
+  background-image: url(./assets/header-shapes\ mobile.svg);
 }
 
 .contact {
