@@ -137,7 +137,7 @@
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 250px;
+  width: 375px;
   height: 552px;
   margin-top: 114px;
 }
@@ -145,6 +145,7 @@
 .work-image {
   background-image: url(./assets/Snapshoot\ Portfolio.svg);
   height: 220px;
+  width: 295px;
   border-radius: 8px;
 }
 
@@ -294,31 +295,34 @@
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-top: 88px;
-  width: 250px;
+  width: 375px;
   height: 600px;
 }
 
 .work-image-2 {
   background-image: url(./assets/Snapshoot\ Portfolio2.svg);
   height: 220px;
+  width: 295px;
   border-radius: 8px;
 }
 
 .work-image-3 {
   background-image: url(./assets/Snapshoot\ Portfolio3.svg);
   height: 220px;
+  width: 295px;
   border-radius: 8px;
 }
 
 .work-image-4 {
   background-image: url(./assets/Snapshoot\ Portfolio4.svg);
   height: 220px;
+  width: 295px;
   border-radius: 8px;
 }
 
 .about-myself {
   position: absolute;
-  width: 300px;
+  width: 375px;
   height: 1263px;
   margin-top: 144px;
   border-top-right-radius: 100px;
@@ -347,6 +351,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  width: 327px;
 }
 
 .resume {
@@ -450,5 +455,9 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: #F7F7F9;
+  width: 375px;
+}
+.work{
+  display: grid;
 }
