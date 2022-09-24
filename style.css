@@ -455,9 +455,10 @@
 }
 
 body {
-  background: #F7F7F9;
+  background: #f7f7f9;
   width: 375px;
 }
-.work{
+
+.work {
   display: grid;
 }
