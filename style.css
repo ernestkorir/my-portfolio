@@ -323,9 +323,11 @@ body {
   width: 295px;
   border-radius: 8px;
 }
-.myself{
+
+.myself {
   padding-top: 1px;
 }
+
 .about-myself {
   width: 375px;
   margin-top: 144px;
@@ -404,7 +406,8 @@ body {
   list-style-type: none; 
   margin-bottom: 113px;
 }
-.language-list ul{
+
+.language-list ul {
   padding-left: 1px;
 }
 
@@ -428,13 +431,11 @@ body {
   background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 12px;
-  width: 260px;
   list-style-type: none;
   flex-direction: column;
   padding-left: 12px;
   gap: 12px;
   width: 303px;
-
 }
 
 .language-list ul li span {
