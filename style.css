@@ -556,7 +556,7 @@ body {
 }
 
 @media screen  and (min-width: 768px) {
-  body{
+  body {
     background: #e5e5e5;
   }
 
@@ -590,8 +590,8 @@ body {
     flex-direction: row;
     height: 496px;
     width: 1156px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     border-radius: 24px;
   }
 
@@ -657,7 +657,7 @@ body {
     margin: 0;
   }
 
-  .bottom-list{
+  .bottom-list {
     margin: 0;
   }
 
@@ -716,7 +716,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 32px;
-    color: #6070ff;  
+    color: #6070ff;
   }
 
   .logo {
@@ -725,7 +725,7 @@ body {
 
   .header1 {
     color: #344563;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
