@@ -1,6 +1,6 @@
 body {
   background: #f7f7f9;
-} 
+}
 
 .toolbar {
   display: flex;
@@ -157,7 +157,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .Tonic {
@@ -547,46 +547,45 @@ body {
   color: #fff;
 }
 
-.second{
+.second {
   display: none;
 }
 
-.two{
+.two {
   display: none;
 }
 
-
-@media screen  and (min-width: 768px){
+@media screen  and (min-width: 768px) {
   body{
     background: #e5e5e5;
   }
 
-  .home-page-section{
-    background: #ffffff;
+  .home-page-section {
+    background: #fff;
     height: 916px;
     width: 1440px;
     display: flex;
     background-image: url(/assets/desktop-version/Header\ bg.svg);
     background-repeat: no-repeat;
   }
-  
-  .Intro{
+
+  .Intro {
     margin: 314px 260px 0 260px;
   }
 
-  .description{
+  .description {
     margin: 12px 260px 12px 260px;
   }
 
-  .media-text{
-    margin: 0px 260px 0px 240px;
+  .media-text {
+    margin: 0 260px 0 240px;
   }
 
-  .right-icons{
-    margin: 0px 260px 0px 240px;
+  .right-icons {
+    margin: 0 260px 0 240px;
   }
 
-  .card-work-1{
+  .card-work-1 {
     margin: 142px;
     flex-direction: row;
     height: 496px;
@@ -596,31 +595,32 @@ body {
     border-radius: 24px;
   }
 
-  .button{
+  .button {
     margin-top: 40px;
   }
 
-  .work-image{
+  .work-image {
     background-image: url(./assets/desktop-version/Snapshoot-Portfolio-1.svg);
     height: 448px;
     width: 544px;
   }
 
-  .desc{
+  .desc {
     height: 50px;
     width: 496px;
     left: 24px;
     top: 146px;
   }
 
-  .card-work-2{
+  .card-work-2 {
     display: flex;
     flex-direction: row-reverse;
     height: 496px;
     width: 1156px;
     margin: 142px;
   }
-  .work-image-2{
+
+  .work-image-2 {
     height: 448px;
     width: 544px;
     left: 24px;
@@ -629,7 +629,7 @@ body {
     background-image: url(./assets/desktop-version/Snapshoot-Portfolio-2.svg);
   }
 
-  .work-image-3{
+  .work-image-3 {
     background-image: url(./assets/desktop-version/Snapshoot-Portfolio-3.svg);
     height: 448px;
     width: 544px;
@@ -638,13 +638,13 @@ body {
     border-radius: 8px;
   }
 
-  .work-image-4{
+  .work-image-4 {
     background-image: url(./assets/desktop-version/Snapshoot-Portfolio-4.svg);
     height: 448px;
     width: 544px;
   }
 
-  .about-myself{
+  .about-myself {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -653,38 +653,38 @@ body {
     top: 4535px;
   }
 
-  .bottom{
-    margin: 0px;
+  .bottom {
+    margin: 0;
   }
 
   .bottom-list{
-    margin: 0px;
+    margin: 0;
   }
 
-  .resume{
+  .resume {
     margin-top: 50px;
   }
 
-  .language-list{
+  .language-list {
     margin-top: 106px;
   }
 
-  .work2{
+  .work2 {
     flex-direction: row;
   }
 
-  .myself{
+  .myself {
     padding-left: 142px;
   }
 
-  .des{
+  .des {
     height: 102px;
     width: 447px;
-    left: 0px;
+    left: 0;
     top: 126px;
   }
 
-  .language-list ul{
+  .language-list ul {
     display: flex;
     height: 120px;
     width: 122px;
@@ -695,60 +695,61 @@ body {
     gap: 12px;
   }
 
-  .language-list ul li span{
+  .language-list ul li span {
     margin-left: 0;
   }
 
-  .language, .framework{
+  .language,
+  .framework {
     width: 582px;
   }
 
-  .line{
+  .line {
     width: 650px;
   }
-  
-  .toolbar{
+
+  .toolbar {
     display: none;
   }
 
-  .second{
+  .second {
     display: flex;
     flex-direction: row;
     gap: 32px;
-    color: #6070ff;    
+    color: #6070ff;  
   }
 
-  .logo{
+  .logo {
     margin-left: 155px;
   }
 
-  .header1{
+  .header1 {
     color: #344563;
-    font-family: 'Poppins';
+    font-family: 'Poppins' sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
   }
 
-  .second nav{
+  .second nav {
     padding-top: 25px;
     gap: 25px;
   }
 
-  .portfolio1{
+  .portfolio1 {
     padding-left: 820px;
   }
 
-  .one{
+  .one {
     display: none;
   }
 
-  .two{
+  .two {
     display: flex;
   }
 
-  .hand-cursor{
+  .hand-cursor {
     background-image: url(/assets/desktop-version/hand-cursor\ 1.svg);
     background-repeat: no-repeat;
     display: flex;
@@ -759,24 +760,22 @@ body {
     margin-top: 328px;
   }
 
-  .contact-section{
+  .contact-section {
     align-items: center;
     width: 1440px;
     background-image: url(./assets/desktop-version/contact\ form.svg);
   }
 
-  .contact-cta{
+  .contact-cta {
     height: 102px;
     width: 569px;
   }
 
-  .contact-form{
+  .contact-form {
     width: 447px;
   }
 
-  #submit{
+  #submit {
     margin-left: 150px;
   }
-  
 }
-
