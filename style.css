@@ -76,6 +76,7 @@ body {
   flex-direction: column;
   height: 718px;
   background-image: url(./assets/header-shapes\ mobile.svg);
+  background-repeat: no-repeat;
 }
 
 .contact {
@@ -562,24 +563,25 @@ body {
     background: #fff;
     height: 916px;
     display: flex;
-    background-image: url(./assets/desktop-version/Header\ bg.svg);
+    background-image: url(./assets/desktop-version/Header-bg.svg);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .Intro {
-    margin: 314px 260px 0 260px;
+    margin: 314px 100px 0 100px;
   }
 
   .description {
-    margin: 12px 260px 12px 260px;
+    margin: 16px 100px;
   }
 
   .media-text {
-    margin: 0 260px 0 240px;
+    margin: 0 260px 0 80px;
   }
 
   .right-icons {
-    margin: 0 260px 0 240px;
+    margin: 0 260px 0 80px;
   }
 
   .card-work-1 {
@@ -707,12 +709,11 @@ body {
     padding-right: 100px;
     display: flex;
     flex-direction: row;
-    gap: 32px;
     color: #6070ff;
   }
 
   .logo {
-    margin-left: 155px;
+    margin-left: 80px;
   }
 
   .header1 {
@@ -769,8 +770,12 @@ body {
   #submit {
     margin-left: 150px;
   }
-
-  .portfolio1 {
-    padding-left: 350px;
+  .header-logo {
+    margin-left: 155px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    position: absolute;
+    right: 100px;
   }
 }
