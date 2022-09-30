@@ -1,6 +1,5 @@
 body {
   background: #f7f7f9;
-  width: 375px;
 }
 
 .toolbar {
@@ -72,12 +71,11 @@ body {
 
 .home-page-section {
   background-size: contain;
-  background-repeat: none;
   display: flex;
   flex-direction: column;
-  width: 304px;
   height: 718px;
   background-image: url(./assets/header-shapes\ mobile.svg);
+  background-repeat: no-repeat;
 }
 
 .contact {
@@ -105,7 +103,7 @@ body {
   list-style: none;
 }
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   body {
     background-color: #fff;
     position: absolute;
@@ -115,7 +113,7 @@ body {
     top: 0;
     margin: 0;
   }
-}
+} */
 
 .media-link {
   color: #505f79;
@@ -141,13 +139,13 @@ body {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
   height: 552px;
   margin-top: 114px;
 }
 
 .work-image {
   background-image: url(./assets/Snapshoot\ Portfolio.svg);
+  background-repeat: no-repeat;
   height: 220px;
   width: 295px;
   border-radius: 8px;
@@ -159,8 +157,6 @@ body {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
-  height: 288px;
 }
 
 .Tonic {
@@ -225,6 +221,7 @@ body {
   align-items: center;
   padding: 0;
   gap: 8px;
+  margin-top: 50px;
 }
 
 .html {
@@ -299,12 +296,11 @@ body {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-top: 88px;
-  width: 327px;
-  height: 600px;
 }
 
 .work-image-2 {
   background-image: url(./assets/Snapshoot\ Portfolio2.svg);
+  background-repeat: no-repeat;
   height: 220px;
   width: 295px;
   border-radius: 8px;
@@ -312,6 +308,7 @@ body {
 
 .work-image-3 {
   background-image: url(./assets/Snapshoot\ Portfolio3.svg);
+  background-repeat: no-repeat;
   height: 220px;
   width: 295px;
   border-radius: 8px;
@@ -329,7 +326,6 @@ body {
 }
 
 .about-myself {
-  width: 375px;
   margin-top: 144px;
   padding-bottom: 60px;
   border-radius: 40px;
@@ -359,7 +355,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
 }
 
 .resume {
@@ -470,10 +465,6 @@ body {
   padding: 120px 24px 60px 24px;
 }
 
-.work {
-  display: grid;
-}
-
 .contact-heading {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -537,4 +528,255 @@ body {
   color: #6070ff;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+}
+
+#submit:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+#submit:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+#submit:disabled {
+  background: #c1c7d0;
+  color: #fff;
+}
+
+.second {
+  display: none;
+}
+
+.two {
+  display: none;
+}
+
+@media screen  and (min-width: 768px) {
+  body {
+    background: #e5e5e5;
+  }
+
+  .home-page-section {
+    background: #fff;
+    height: 916px;
+    display: flex;
+    background-image: url(./assets/desktop-version/Header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 73px;
+  }
+
+  .Intro {
+    margin: 314px 100px 0 100px;
+  }
+
+  .description {
+    margin: 16px 100px;
+  }
+
+  .media-text {
+    margin: 0 260px 0 80px;
+  }
+
+  .right-icons {
+    margin: 0 260px 0 80px;
+  }
+
+  .card-work-1 {
+    margin: 142px;
+    flex-direction: row;
+    height: 496px;
+    left: 0;
+    top: 0;
+    border-radius: 24px;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+
+  .work-image {
+    background-image: url(./assets/desktop-version/Snapshoot-Portfolio-1.svg);
+    height: 448px;
+    width: 544px;
+  }
+
+  .desc {
+    height: 50px;
+    left: 24px;
+    top: 146px;
+  }
+
+  .card-work-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 142px;
+  }
+
+  .work-image-2 {
+    height: 448px;
+    width: 100%;
+    left: 24px;
+    top: 24px;
+    border-radius: 8px;
+    background-image: url(./assets/desktop-version/Snapshoot-Portfolio-2.svg);
+  }
+
+  .work-image-3 {
+    background-image: url(./assets/desktop-version/Snapshoot-Portfolio-3.svg);
+    background-repeat: no-repeat;
+    height: 448px;
+    width: 100%;
+    left: 24px;
+    top: 24px;
+    border-radius: 8px;
+  }
+
+  .work-image-4 {
+    background-image: url(./assets/desktop-version/Snapshoot-Portfolio-4.svg);
+    background-repeat: no-repeat;
+    height: 448px;
+    width: 100%;
+  }
+
+  .about-myself {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .bottom {
+    margin: 0;
+  }
+
+  .bottom-list {
+    margin: 0;
+  }
+
+  .resume {
+    margin-top: 50px;
+  }
+
+  .language-list {
+    margin-top: 106px;
+  }
+
+  .work2 {
+    flex-direction: row;
+  }
+
+  .myself {
+    padding-left: 100px;
+  }
+
+  .des {
+    height: 102px;
+    left: 0;
+    top: 126px;
+  }
+
+  .language-list ul {
+    display: flex;
+    height: 120px;
+    width: 122px;
+    left: 12px;
+    top: 12px;
+    border-radius: 8px;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .language-list ul li span {
+    margin-left: 0;
+  }
+
+  /* .language,
+  .framework {
+    width: 582px;
+  } */
+
+  .line {
+    width: 100%;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .second {
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    color: #6070ff;
+  }
+
+  .logo {
+    margin-left: 80px;
+  }
+
+  .header1 {
+    color: #344563;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .second nav {
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  /* .portfolio1 {
+    padding-left: 820px;
+  } */
+
+  .one {
+    display: none;
+  }
+
+  .two {
+    display: flex;
+  }
+
+  .hand-cursor {
+    background-image: url(/assets/desktop-version/hand-cursor\ 1.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 57px;
+    height: 57px;
+    left: 376px;
+    top: 53.05px;
+    margin-top: 328px;
+  }
+
+  .contact-section {
+    align-items: center;
+    background-image: url(./assets/desktop-version/contact\ form.svg);
+  }
+
+  .contact-cta {
+    height: 102px;
+    width: 569px;
+  }
+
+  .contact-form {
+    width: 447px;
+  }
+
+  #submit {
+    margin-left: 150px;
+  }
+
+  .header-logo {
+    margin-left: 155px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    position: absolute;
+    right: 100px;
+  }
 }
