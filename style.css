@@ -493,6 +493,13 @@ body {
   gap: 20px;
 }
 
+/* Code Added by Lukman Begins */
+.text-shift:hover::placeholder {
+  transform: translate(10px, 0);
+}
+
+/* Code Added by Lukman Ends */
+
 #name,
 #email,
 #message {
