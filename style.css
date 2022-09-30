@@ -565,6 +565,7 @@ body {
     background-image: url(./assets/desktop-version/Header-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-y: 73px;
   }
 
   .Intro {
