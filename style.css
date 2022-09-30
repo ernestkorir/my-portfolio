@@ -143,6 +143,20 @@ body {
   width: 327px;
   height: 552px;
   margin-top: 114px;
+  border: 1px solid var(--bs-gray-dark);
+  cursor: pointer;
+  margin: 5px auto;
+  transition: 0.4s linear;
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(20px);
+}
+
+.card-work-1:hover,
+.card-work-2:hover{
+  background-color: rgb(31 38 135 / 37%);
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
 }
 
 .work-image {
@@ -600,6 +614,12 @@ body {
     left: 0;
     top: 0;
     border-radius: 24px;
+    border: 1px solid var(--bs-gray-dark);
+    cursor: pointer;
+    margin: 5px auto;
+    transition: 0.4s linear;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(20px);
   }
 
   .button {
