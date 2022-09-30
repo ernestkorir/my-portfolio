@@ -71,7 +71,6 @@ body {
 
 .home-page-section {
   background-size: contain;
-  background-repeat: none;
   display: flex;
   flex-direction: column;
   height: 718px;
@@ -770,6 +769,7 @@ body {
   #submit {
     margin-left: 150px;
   }
+  
   .header-logo {
     margin-left: 155px;
     display: flex;
