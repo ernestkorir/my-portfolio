@@ -22,6 +22,10 @@ To get a local copy up and running follow these simple example steps.
 
 git clone https://github.com/ernestkorir/my-portfolio.git
 
+## Live Demo
+
+[Live Demo Link](https://ernestkorir.github.io/my-portfolio/)
+
 ## Authors
 
 👤 **Author1**
