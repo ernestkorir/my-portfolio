@@ -573,7 +573,7 @@ body {
 .menu-list {
   list-style: none;
   text-decoration: none;
-  margin-top: 2.5em;
+  margin-top: 3.5em;
 }
 
 .menu ul li a {
@@ -582,7 +582,7 @@ body {
 
 .menu div {
   float: right;
-  padding: 10px;
+  padding: 36px;
 }
 
 @media screen  and (min-width: 768px) {
