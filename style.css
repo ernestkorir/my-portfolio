@@ -563,7 +563,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   background: #6070ff;
   opacity: 0.9;
   width: 100%;
@@ -577,7 +577,7 @@ body {
 }
 
 .menu ul li a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .menu div {
