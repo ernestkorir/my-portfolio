@@ -557,14 +557,14 @@ body {
 .menu {
   display: none;
   position: absolute;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   align-items: center;
-  color: #FFFFFF;
-  background: #6070FF;
+  color: #ffffff;
+  background: #6070ff;
   opacity: 0.9;
   width: 100%;
   height: 100%;
@@ -576,8 +576,8 @@ body {
   margin-top: 2.5em;
 }
 
-.menu ul li a{
-  color: #FFFFFF;
+.menu ul li a {
+  color: #ffffff;
 }
 
 .menu div {
