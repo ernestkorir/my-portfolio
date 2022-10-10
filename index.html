@@ -17,8 +17,16 @@
     <header class="toolbar">
         <a href="#" class="logo">My Logo</a>
         <nav class="fas fa-bars"></nav>
+        <div class="menu">
+            <div class="fa fa-times" aria-hidden="true"></div>
+            <ul class="menu-list">
+                <li><a href="#portfolio" style="text-decoration: none;">Portfolio</a></li>
+                <li><a href="#about" style="text-decoration: none;">About</a></li>
+                <li><a href="#contact" style="text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="home-page-section">
+    <section class="home-page-section" id="portfolio">
         <header class="toolbar second">
             <a href="#" class="logo">My Logo</a>
             <div class="header-logo">
@@ -138,7 +146,7 @@
         </div>
     </section>
     <section>
-        <div class="about-myself">
+        <div class="about-myself" id="about">
             <div class="myself">
                 <h2 class="about-title">About <br> Myself</h2>
                 <h6 class="des">Hello I’m a software developer! I can help you build a product , feature or website Look
@@ -195,7 +203,7 @@
         </div>
 
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <h2 class="contact-heading">Contact me</h2>
         <p class="contact-cta">If you have an application you are
             interested in developing, a feature
@@ -211,6 +219,7 @@
         </form>
 
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
