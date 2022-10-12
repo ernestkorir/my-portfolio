@@ -33,7 +33,7 @@ body {
 }
 
 .fa-bars {
-  width: 40px;
+  padding-right: 20px;
   height: 40px;
   margin-top: 25px;
 }
@@ -347,7 +347,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   justify-content: space-between;
-  width: 327px;
   margin-top: 20px;
 }
 
@@ -405,7 +404,6 @@ body {
   color: #000;
   justify-content: space-between;
   display: flex;
-  width: 290px;
   padding: 15px;
 }
 
@@ -506,6 +504,7 @@ body {
 
 .second {
   display: none;
+
 }
 
 .two {
@@ -590,6 +589,10 @@ body {
 }
 
 /* end of popup */
+
+#error {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -699,6 +702,8 @@ body {
 
   .language-list {
     margin-top: 106px;
+    width: 100%;
+    margin-right: 70px;
   }
 
   .work2 {
@@ -763,10 +768,6 @@ body {
     gap: 25px;
   }
 
-  /* .portfolio1 {
-    padding-left: 820px;
-  } */
-
   .one {
     display: none;
   }
@@ -811,6 +812,7 @@ body {
     gap: 25px;
     position: absolute;
     right: 100px;
+    list-style: none;
   }
 
   .menu {
@@ -818,6 +820,10 @@ body {
   }
 
   .popup {
+    display: none;
+  }
+
+  #error {
     display: none;
   }
 }

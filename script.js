@@ -61,7 +61,7 @@ const loadProjects = function() {
 
         heading.textContent = proj.name;
         description.textContent = proj.description;
-        projImg.style.backgroundImage = `url(${proj.featuredImage})`;
+        projImg.style.backgroundImage = `url("${proj.featuredImage}")`;
 
         proj.tags.forEach(text => {
             let tagTemplate = tag.cloneNode(true);
@@ -127,3 +127,25 @@ closePopup.addEventListener('click', () => {
     popup.style.display = 'none';
 })
 
+//contact form
+
+let email = document.querySelector('#email').value
+let submit = document.querySelector('#submit')
+let form = document.querySelector('#form')
+
+function isItUppercase(value) {
+    if (value.match(/^[a-z@.]*$/)) {
+      return true;
+    }
+    return false;
+  };
+isItUppercase(email)
+
+
+form.addEventListener('submit', (e) => {
+    if (isItUppercase(email.value)) {
+      error.textContent = '';
+    }else { e.preventDefault();
+        error.textContent = 'Email needs to be in lowerCase';
+    }
+})
