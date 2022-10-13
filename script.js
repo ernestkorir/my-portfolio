@@ -141,5 +141,21 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 //Validate contact form end
+addEventListener('input', 
+    () => {
+    const Data = {
+      FullName: document.querySelector('#name').value,
+      EmailAdress: document.querySelector('#email').value,
+      TextArea: document.querySelector('#message').value
+    };
+       localStorage.setItem("LocalFormStorage" ,JSON.stringify(Data));
+   }
+);
 
+const StoredData = JSON.parse(localStorage.getItem("LocalFormStorage"));
+document.querySelector('#name').value = StoredData.FullName;
+document.querySelector('#email-address').value = StoredData.EmailAdress;
+document.querySelector('#textarea').value = StoredData.TextArea;
+
+//Local storage form end
 
