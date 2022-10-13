@@ -6,7 +6,7 @@
 
 ## Built With
 
-- Major languages: HTML and CSS
+- Major languages: HTML, CSS and JAVASCRIPT
 - Technologies used: Linter
 
 ## Getting Started
@@ -53,5 +53,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-

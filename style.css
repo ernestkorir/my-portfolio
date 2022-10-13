@@ -599,6 +599,7 @@ body {
 
 #error {
   display: none;
+  color: red
 }
 
 @media screen and (min-width: 768px) {

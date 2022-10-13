@@ -127,25 +127,19 @@ closePopup.addEventListener('click', () => {
     popup.style.display = 'none';
 })
 
-//contact form
+// Validate Contact form start
+const contactForm = document.querySelector('.contact-form');
+const emailInput = document.querySelector('#email');
+const validationMessage = document.querySelector('#error');
+contactForm.addEventListener('submit', (event) => {
+  const strInput = emailInput.value;
+  if (/[a-z0-9_-]+@[a-z0-9_-]+\.[a-z]{2,}(?:\.[a-z+])?/.test(strInput)) {
+    validationMessage.innerHTML = 'Your email address should not contain upper case letters';
+    validationMessage.classList.add('shake');
+    validationMessage.style.display = 'block';
+    event.preventDefault();
+  }
+});
+//Validate contact form end
 
-let email = document.querySelector('#email').value
-let submit = document.querySelector('#submit')
-let form = document.querySelector('#form')
 
-function isItUppercase(value) {
-    if (value.match(/^[a-z@.]*$/)) {
-      return true;
-    }
-    return false;
-  };
-isItUppercase(email)
-
-
-form.addEventListener('submit', (e) => {
-    if (isItUppercase(email.value)) {
-      error.textContent = '';
-    }else { e.preventDefault();
-        error.textContent = 'Email needs to be in lowerCase';
-    }
-})
