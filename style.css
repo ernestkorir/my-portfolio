@@ -635,7 +635,7 @@ body {
   .card-work-1 {
     margin: 142px;
     flex-direction: row;
-    height: 496px;
+    height: 50%;
     left: 0;
     top: 0;
     border-radius: 24px;
@@ -647,7 +647,6 @@ body {
 
   .work-image {
     background-image: url(./assets/desktop-version/Snapshoot-Portfolio-1.svg);
-    height: 448px;
     width: 544px;
   }
 

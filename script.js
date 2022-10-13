@@ -4,10 +4,10 @@ const menu = document.querySelector(".menu");
 const close = document.querySelector('.fa-times');
 const myProjects = [
     {
-        name: "Tonic", 
+        name: "Tonic",
+        preferedImage: "./assets/Snapshoot\ Portfolio.svg", 
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './assets/Snapshoot\ Portfolio.svg',
-        languages: ['Canopy','backend'], 
+        languages: ['Canopy','backend', '2015'], 
         tags: ['HTML','CSS','Javascript'], 
         liveLink:'https://ernestkorir.github.io/my-portfolio/', 
         sourceLink: 'https://github.com/ernestkorir/my-portfolio.git',
@@ -15,9 +15,9 @@ const myProjects = [
     },
     {
         name: "Multi-Post Stories", 
+        preferedImage:"./assets/Snapshoot\ Portfolio2.svg",
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './assets/Snapshoot\ Portfolio2.svg',
-        languages: ['reactjs','frontend'], 
+        languages: ['reactjs','frontend','2015'], 
         tags: ['HTML','CSS','Javascript'], 
         liveLink:'https://ernestkorir.github.io/my-portfolio/', 
         sourceLink: 'https://github.com/ernestkorir/my-portfolio.git',
@@ -25,19 +25,19 @@ const myProjects = [
     },
     {
         name: "Tonic", 
+        preferedImage: './assets/Snapshoot\ Portfolio3.svg',
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './assets/Snapshoot\ Portfolio3.svg',
-        languages: ['Backbonejs','typescript'], 
+        languages: ['Backbonejs','typescript','2015'], 
         tags: ['HTML','CSS','Javascript'],
         liveLink:'https://ernestkorir.github.io/my-portfolio/', 
         sourceLink: 'https://github.com/ernestkorir/my-portfolio.git',
         year: 2019
     },
     {
-        name: "Tonic", 
+        name: "Multi-Post Stories",
+        preferedImage:"./assets/Snapshoot\ Portfolio4.svg",
         description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: './assets/Snapshoot\ Portfolio4.svg',
-        languages: ['RDBMS','backend'], 
+        languages: ['RDBMS','backend','2015'], 
         tags: ['HTML','CSS','Javascript'], 
         liveLink:'https://ernestkorir.github.io/my-portfolio/', 
         sourceLink: 'https://github.com/ernestkorir/my-portfolio.git',
@@ -49,7 +49,7 @@ const myProjects = [
 const loadProjects = function() {
     let projectsDiv = document.querySelector('section#projects');
     let cardTemplate = projectsDiv.querySelector('#project-template');
-    myProjects.forEach(proj => {
+    myProjects.forEach((proj) => {
         let template = cardTemplate.cloneNode(true);
         template.removeAttribute('id');
 
@@ -61,7 +61,8 @@ const loadProjects = function() {
 
         heading.textContent = proj.name;
         description.textContent = proj.description;
-        projImg.style.backgroundImage = `url("${proj.featuredImage}")`;
+        projImg.style.backgroundImage = `url("${proj.preferedImage}")`;
+        // modalPicture.style.backgroundImage = `url(${card.image})`
 
         proj.tags.forEach(text => {
             let tagTemplate = tag.cloneNode(true);
@@ -90,6 +91,7 @@ const loadProjects = function() {
 
 loadProjects();
 
+
 hamburger.addEventListener("click", () => {
     if(!menu.style.display || menu.style.display === "none") {
     document.querySelector(".menu").style.display = "block";
@@ -108,18 +110,17 @@ close.addEventListener("click", () => {
     document.querySelector(".popup").style.display = "none";
 });
 
-const mobileBtn1 = document.querySelector('#mobilebtn1');
-const mobileBtn2 = document.querySelector('#mobilebtn2');
-const mobileBtn3 = document.querySelector('#mobilebtn3');
-const mobileBtn4 = document.querySelector('#mobilebtn4');
+const button = document.querySelectorAll('#buttons');
 const popup = document.querySelector('.popup')
 
-mobileBtn1.addEventListener("click", () => {
-  if(!popup.style.display || popup.style.display === 'none') {
-    popup.style.display = 'block';
-  } else {
-    popup.style.display = 'none';
-  }
+button.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(!popup.style.display || popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+    }) 
 });
 
 const closePopup = document.querySelector('#close')
