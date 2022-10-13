@@ -133,7 +133,7 @@ const emailInput = document.querySelector('#email');
 const validationMessage = document.querySelector('#error');
 contactForm.addEventListener('submit', (event) => {
   const strInput = emailInput.value;
-  if (/[a-z0-9_-]+@[a-z0-9_-]+\.[a-z]{2,}(?:\.[a-z+])?/.test(strInput)) {
+  if (/[A-Z]/.test(strInput)) {
     validationMessage.innerHTML = 'Your email address should not contain upper case letters';
     validationMessage.classList.add('shake');
     validationMessage.style.display = 'block';
@@ -154,8 +154,8 @@ addEventListener('input',
 
 const StoredData = JSON.parse(localStorage.getItem("LocalFormStorage"));
 document.querySelector('#name').value = StoredData.FullName;
-document.querySelector('#email-address').value = StoredData.EmailAdress;
-document.querySelector('#textarea').value = StoredData.TextArea;
+document.querySelector('#email').value = StoredData.EmailAdress;
+document.querySelector('#message').value = StoredData.TextArea;
 
 //Local storage form end
 
