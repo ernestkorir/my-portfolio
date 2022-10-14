@@ -114,7 +114,29 @@ const button = document.querySelectorAll('#buttons');
 const popup = document.querySelector('.popup')
 
 button.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", function(event) {
+        var clickedBtn = event.target;
+        var parentTemplate = clickedBtn.closest('.card-work-1');
+        var title = parentTemplate.querySelector('.Tonic');
+        var subTitle = parentTemplate.querySelector('.frame1');
+        var description = parentTemplate.querySelector('.desc');
+        var languages = parentTemplate.querySelector('.tags');
+        var image = parentTemplate.querySelector('.work-image')
+
+
+        // console.log(title.textContent, subTitle, description, languages);
+        let popupTitle = popup.querySelector('.Tonic')
+        popupTitle.textContent = title.textContent;
+        let popupSubtitle = popup.querySelector('.frame1');
+        popupSubtitle.innerHTML = subTitle.innerHTML;
+        let popupdescription = popup.querySelector('.desc');
+        popupdescription.textContent = description.textContent;
+        let popupLanguages = popup.querySelector('.tags');
+        popupLanguages.innerHTML = languages.innerHTML;
+        let popupImage = popup.querySelector('.work-image')
+        popupImage.style.backgroundImage = image.style.backgroundImage;
+        
+
         if(!popup.style.display || popup.style.display === 'none') {
           popup.style.display = 'block';
         } else {
@@ -122,6 +144,8 @@ button.forEach((item) => {
         }
     }) 
 });
+
+
 
 const closePopup = document.querySelector('#close')
 closePopup.addEventListener('click', () => {

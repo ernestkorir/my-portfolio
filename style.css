@@ -562,6 +562,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  padding-top: 15px;
 }
 
 #see-live {
@@ -591,6 +592,21 @@ body {
   background-color: #c1c7d0;
   opacity: 0.95;
   top: 0;
+  display: none;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  color: #67798e;
+  bottom: 540px;
+}
+
+#line {
+  padding-top: 15px;
+}
+
+#second-tag {
   display: none;
 }
 
@@ -778,7 +794,7 @@ body {
   }
 
   .two {
-    display: flex;
+    display: block;
   }
 
   .hand-cursor {
@@ -830,5 +846,25 @@ body {
 
   #error {
     display: none;
+  }
+
+  #card-work-1 {
+    display: block;
+    width: 100%;
+  }
+
+  #left-block {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+  }
+
+  #close {
+    right: -150px;
+  }
+
+  #second-tag {
+    display: flex;
+    margin-top: 10px;
   }
 }
